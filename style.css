@@ -1,0 +1,106 @@
+html { 
+	background: url(images/MAP.png) no-repeat center center fixed;
+	background-size: cover;
+}
+.title{
+	font-family: arial;
+	font-weight: bold;
+	font-size: 50px;
+	color: white;
+	bottom: 40;
+	left: 20;
+	position: absolute;
+	letter-spacing: 15px;
+}
+
+.subheading{
+	font-family: monospace;
+	color: white;
+	position: absolute;
+	bottom: 20;
+	left: 20;
+}
+
+img{
+	width: 250px;
+	position: absolute;
+	bottom: -150;
+	border-radius: 100%;
+	-webkit-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+h4{
+	color: darkorange;
+	font-family: arial;
+	font-size: 18px;
+}
+
+.song-item{
+	position: absolute;
+	display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.song-item:hover .song-info{
+	opacity: 1;
+	transition: ease-in 0.15s;
+}
+
+audio{
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	margin-top: 33px;
+	margin-left: 3px;
+}
+
+
+.song-info{
+	position: fixed ;
+	bottom: 170;
+	right: 20;
+	opacity: 0;
+	width: 250px;
+}
+
+.text-info{
+	border: solid 1px white;
+	padding: 22px;
+	color: white;
+	padding-bottom: 100px;
+	border-radius: 10%;
+	font-family: arial;
+	display: ;
+}
+
+h1{
+	line-height: 35px;
+	font-size: 32px;
+}
+
+ul{
+	line-height: 18px;
+	font-size: 15px;
+	padding-left: 15px;
+	font-family: monospace;
+}
+
+.spotify{
+	position: absolute;
+	cursor: pointer;
+}
+
+
